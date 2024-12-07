@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 import axios from "axios";
 import { backendUrl } from "../App";
 import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 
 const Update = ({ token }) => {
     const { id } = useParams();
