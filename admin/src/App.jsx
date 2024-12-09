@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import { Routes, Route } from 'react-router-dom'
+import { Routes , Route } from 'react-router-dom'
 import Add from './pages/Add'
 import List from './pages/List'
 import Orders from './pages/Orders'
@@ -39,7 +39,6 @@ const App = () => {
                 <Route path='/update/:id' element={<Upate token={token}/>}/>
                 <Route path='/orders' element={<Orders token={token} />} />
                 <Route path='/users' element={<User token={token} />} />
-
               </Routes>
             </div>
           </div>
