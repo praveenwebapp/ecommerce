@@ -3,10 +3,11 @@ import {assets} from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 import axios from 'axios';
-import { backendUrl } from '../../../admin/src/App';
+// import { backendUrl } from '../../../admin/src/App';
 import { useEffect } from 'react';
 
 const Navbar = () => {
+   const backendUrl = import.meta.env.VITE_BACKEND_URL
 
     const [visible,setVisible] = useState(false);
     const [showProfileModal, setShowProfileModal] = useState(false); // State for profile modal
